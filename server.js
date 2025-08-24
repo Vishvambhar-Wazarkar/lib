@@ -1,9 +1,9 @@
 const express = require('express');
-const db = require('./lms/models');
+const db = require('./models');
 
-const bookRoutes = require("./lms/routes/bookRoutes");
-const userRoutes = require("./lms/routes/userRoutes");
-const issueRoutes = require("./lms/routes/issueRoutes");
+const bookRoutes = require("./routes/bookRoutes");
+const userRoutes = require("./routes/userRoutes");
+const issueRoutes = require("./routes/issueRoutes");
 
 const app = express();
 app.use(express.json());
