@@ -1,0 +1,22 @@
+"table_name","column_name","data_type","is_nullable","column_default"
+"books","id","integer","NO","nextval('books_id_seq'::regclass)"
+"books","title","character varying","NO",NULL
+"books","author","character varying","NO",NULL
+"books","isbn","character varying","NO",NULL
+"books","available","boolean","YES","true"
+"books","createdAt","timestamp with time zone","NO",NULL
+"books","updatedAt","timestamp with time zone","NO",NULL
+"issued_books","id","integer","NO","nextval('issued_books_id_seq'::regclass)"
+"issued_books","userId","integer","NO",NULL
+"issued_books","bookId","integer","NO",NULL
+"issued_books","issueDate","timestamp with time zone","YES",NULL
+"issued_books","returnDate","timestamp with time zone","YES",NULL
+"issued_books","createdAt","timestamp with time zone","NO",NULL
+"issued_books","updatedAt","timestamp with time zone","NO",NULL
+"users","id","integer","NO","nextval('users_id_seq'::regclass)"
+"users","name","character varying","NO",NULL
+"users","email","character varying","NO",NULL
+"users","password","character varying","NO",NULL
+"users","role","character varying","NO","'MEMBER'::character varying"
+"users","createdAt","timestamp with time zone","NO",NULL
+"users","updatedAt","timestamp with time zone","NO",NULL
